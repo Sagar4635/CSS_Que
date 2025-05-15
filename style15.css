@@ -1,0 +1,103 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Pricing Section */
+.pricing {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Plan Cards */
+.plan {
+    background: white;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+/* Featured Plan */
+.featured {
+    background: #1b1c31;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Plan Titles */
+.plan h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.plan p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Pricing */
+.plan h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Features List */
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    font-size: 14px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Subscribe Button */
+.plan button {
+    background: #1b1c31;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.plan button:hover {
+    background: darkblue;
+}
+
+/* Featured Plan Button */
+.featured button {
+    background: white;
+    color: #1b1c31;
+    font-weight: bold;
+}
+
+.featured button:hover {
+    background: lightgray;
+}

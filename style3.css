@@ -1,0 +1,50 @@
+body {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+/* Box A (Center) */
+.a {
+    top: 200px;
+    left: 200px;
+}
+
+/* Box B (Top-Left) */
+.b {
+    top: 170px;  /* 30px above A */
+    left: 170px;  /* 30px left of A */
+}
+
+/* Box C (Top-Right) */
+.c {
+    top: 170px;  /* 30px above A */
+    left: 230px;  /* 30px right of A */
+}
+
+/* Box D (Bottom-Left) */
+.d {
+    top: 230px;  /* 30px below A */
+    left: 170px;  /* 30px left of A */
+}
+
+/* Box E (Bottom-Right) */
+.e {
+    top: 230px;  /* 30px below A */
+    left: 230px;  /* 30px right of A */
+}

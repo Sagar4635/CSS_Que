@@ -1,0 +1,59 @@
+/* Link this CSS file in the index.html file */
+  
+/* B. Combinator Selectors */
+
+/* Target all anchor tags and change the text color to red */
+nav a {
+    color: red;
+}
+
+/* Target only the first <h2> tag and change the text and background color */
+nav > h2 {
+    color: white;
+    background-color: blue;
+    padding: 5px;
+}
+
+/* Select the first <p> tag and change the text color to red */
+nav p:first-of-type {
+    color: red;
+}
+
+/* C. Attribute Selectors */
+
+/* Target the anchor tag with attribute "href" and change color to red and remove text underline */
+a[href] {
+    color: red;
+    text-decoration: none;
+}
+
+/* Target the anchor tag with the attribute of class name “active” and provide text style properties */
+a[class="active"] {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Target the anchor tag with the attribute "target" whose value is "_self" and change the background color */
+a[target="_self"] {
+    background-color: yellow;
+    padding: 5px;
+}
+
+/* D. Pseudo Selectors */
+
+/* Target the last <p> tag and add "..." after its value */
+nav p:last-of-type::after {
+    content: "...";
+}
+
+/* Change the bullet points' color without affecting the text */
+ul li::marker {
+    color: blue;
+}
+
+/* Select the first letter of the second <p> tag and modify it */
+nav p:nth-of-type(2)::first-letter {
+    color: red;
+    font-size: 30px;
+}

@@ -1,0 +1,21 @@
+/* Remove bullet points and text underlining using the Descendant Combinator */
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: blue;
+    font-weight: bold;
+}
+
+/* Display menu list items inline using the Child Combinator */
+nav > ul > li {
+    display: inline;
+}
+
+/* Add margin between menu list items using the Adjacent Sibling Combinator */
+nav ul li + li {
+    margin-left: 15px;
+}

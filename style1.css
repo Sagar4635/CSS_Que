@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    width: 395px;
+    height: 200px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid black;
+}
+
+.box {
+    background-color: #fadfc2;
+    display: flex;
+    font-size: 20px; 
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.A{
+    width: 220px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.B{
+    width: 85px;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

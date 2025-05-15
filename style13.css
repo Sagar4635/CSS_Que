@@ -1,0 +1,24 @@
+/* Centering the content */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Base Button Styling */
+.hover-button {
+    background-color: royalblue;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.hover-button:hover {
+    background-color: dodgerblue;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}

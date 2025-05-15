@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 60vh;
+}
+
+/* Default Layout: Desktop View */
+.box1, .box4 {
+    background-color: black;
+    color: white;
+    width: 10%;
+}
+
+.box2 {
+    background-color: lightgreen;
+    width: 80%;
+}
+
+.box3 {
+    background-color: orange;
+    width: 80%;
+}
+
+/* Responsive Layout: Stack items for small screens */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    .box1, .box4 {
+        width: 100%;
+    }
+
+    .box2, .box3 {
+        width: 100%;
+    }
+}
